@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+nav{
+    background-color: gray;
+    font-family: 'Oswald', sans-serif;
+}
+
+main,footer  {
+    font-family: 'Oswald', sans-serif;
+}
+
+.title_page {
+    text-shadow:  0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px
+    #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 3px 3px 4px #000000;
+}
+
+#navbarText {
+    font-size:20px;
+}
+
+.section1 {
+    background-image: url("../assets/index/bg.webp");
+    background-position: center;
+}
+
+.container_news{
+    background-color: white;
+    border: black 5px solid;
+}
+
+.navbar-toggler {
+    background-color: gainsboro;
+}
+
+a {
+    text-shadow:  0 0 #fff, -0.4px 0 0 #fff, 0 0.4px 0 #fff, 0 -0.4px 0 #fff, 0.4px 0.4px
+    #fff, -0.4px -0.4px 0 #fff, 0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff;
+}
+
+footer {
+    background-color: black;
+    color:white;
+}
