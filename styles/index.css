@@ -21,6 +21,7 @@ main,footer  {
 .section1 {
     background-image: url("../assets/index/bg.webp");
     background-position: center;
+    background-size: cover;
 }
 
 .container_news{
@@ -37,6 +38,10 @@ a {
     #fff, -0.4px -0.4px 0 #fff, 0.4px -0.4px 0 #fff, -0.4px 0.4px 0 #fff;
 }
 
+.more_button {
+    border-radius: 10px;
+    background-color: gainsboro;
+}
 footer {
     background-color: black;
     color:white;
