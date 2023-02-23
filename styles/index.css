@@ -41,6 +41,7 @@ a {
 .more_button {
     border-radius: 10px;
     background-color: gainsboro;
+    max-height: 44px;
 }
 footer {
     background-color: black;
