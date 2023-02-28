@@ -56,50 +56,39 @@
     <main>
         <section alt="Hoja" class="section1 py-5">
             <div class="container col-10 d-flex flex-wrap justify-content-center container_news">
-                <h1 class="col-12 my-3" align="center">Peatón... ¿Te dejamos algunos consejos?</h1>
-                <div class="my-3 col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img class="col-12 col-lg-6" style="width:250px; height: 250px;" src="../assets/educacion_vial/peaton.webp">
-                </div>
-                <div class="col-lg-6 col-12 my-3 p-3">
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">1.</b> Cruza siempre por las sendas peatonales.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">2.</b> Si no están demarcadas en la calzada, hacerlo por la prolongación natural de las veredas.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">3.</b> Evitá cruzar por delante de cualquier vehículo, salvo que este detenido en el semáforo, o
-                    entre vehículos detenidos/estacionados.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">4.</b> No cruces corriendo un semáforo que esta por pasar a verde, respetá los semáforos, no
-                    solamente el peatonal.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">5.</b> Mirá a ambos lados al cruzar una calle, prestá atención a pesar de tener derecho de paso.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">6.</b> Utilizá ropa clara de noche, mejora que te vean los conductores.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">7.</b> No uses el celular cuando cruzás una intersección, tu música favorita, escucharla mejor en
-                            casa, <b>NO</b> olvides que compartís la vía pública, por ejemplo, con distintos vehículos de  
-                            emergencia que tienen la prioridad de paso si están en emergencia, ante vos que
-                            estás caminando.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">8.</b> Finalmente para nuestra ciudad, y para poder comenzar una nueva etapa superadora,
-                        solicitaríamos semáforos peatonales, y reforzar aún más la educación vial en colegios, sabemos
-                        que las salidas son caóticas y el más vulnerable como siempre es el peatón.-</h5>
-                </div>
-
-                <div class="col-6 my-3 p-3 d-none d-lg-flex flex-wrap justify-content-end">
-                    <h5 align="right" class="col-12">¿Conocés las señales de tránsito?</h5>
-                    <h5 align="right" class="col-12"><b>Te las mostramos, mira...</b></h5>
-                    <button class="m-3 col-6 col-md-4 p-0 more_button">Leer más</button>
-                </div>
-
-                <div class="col-12 my-3 p-3 d-flex d-lg-none flex-wrap justify-content-center">
-                    <h5 align="center">¿Conocés las señales de tránsito?</h5>
-                    <h5 align="center"><b>Te las mostramos, mira...</b></h5>
-                    <button class="m-3 col-6 col-md-4 p-1 more_button">Leer más</button>
-                </div>
-
-                <div class="my-3 col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img class="col-12 col-lg-6" style="object-fit: cover; width:250px; height: 250px;" src="../assets/educacion_vial/señales.webp">
-                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="../assets/galeria/carousel_img1.webp" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="../assets/galeria/carousel_img2.webp" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="../assets/galeria/carousel_img3.webp" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="d-flex flex-wrap justify-content-center">
-          <h4 class="col-12 m-3" align="center">Suscribete para obtener actualizaciones</h4>
+          <h4 class="col-12 m-5" align="center">Suscribete para obtener actualizaciones</h4>
           <form class="px-2 col-6">
             <input class="col-12" id="email" type="email" name="name">
           </form>
@@ -122,10 +111,19 @@
           </div>
         </div>
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" 
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" 
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
   </body>
   </html>
