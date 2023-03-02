@@ -47,3 +47,7 @@ footer {
     background-color: black;
     color:white;
 }
+
+.text_contactos {
+    text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 3px 3px 4px white;
+}

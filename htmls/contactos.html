@@ -54,49 +54,49 @@
     </header>
 
     <main>
-        <section alt="Hoja" class="section1 py-5">
-            <div class="container col-10 d-flex flex-wrap justify-content-center container_news">
-                <h1 class="col-12 my-3" align="center">Peatón... ¿Te dejamos algunos consejos?</h1>
-                <div class="my-3 col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img class="col-12 col-lg-6" style="width:250px; height: 250px;" src="../assets/educacion_vial/peaton.webp">
-                </div>
-                <div class="col-lg-6 col-12 my-3 p-3">
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">1.</b> Cruza siempre por las sendas peatonales.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">2.</b> Si no están demarcadas en la calzada, hacerlo por la prolongación natural de las veredas.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">3.</b> Evitá cruzar por delante de cualquier vehículo, salvo que este detenido en el semáforo, o
-                    entre vehículos detenidos/estacionados.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">4.</b> No cruces corriendo un semáforo que esta por pasar a verde, respetá los semáforos, no
-                    solamente el peatonal.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">5.</b> Mirá a ambos lados al cruzar una calle, prestá atención a pesar de tener derecho de paso.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">6.</b> Utilizá ropa clara de noche, mejora que te vean los conductores.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">7.</b> No uses el celular cuando cruzás una intersección, tu música favorita, escucharla mejor en
-                            casa, <b>NO</b> olvides que compartís la vía pública, por ejemplo, con distintos vehículos de  
-                            emergencia que tienen la prioridad de paso si están en emergencia, ante vos que
-                            estás caminando.</h5>
-                    <h5 align="justify" class="my-sm-2"><b style="color:red;">8.</b> Finalmente para nuestra ciudad, y para poder comenzar una nueva etapa superadora,
-                        solicitaríamos semáforos peatonales, y reforzar aún más la educación vial en colegios, sabemos
-                        que las salidas son caóticas y el más vulnerable como siempre es el peatón.-</h5>
-                </div>
-
-                <div class="col-6 my-3 p-3 d-none d-lg-flex flex-wrap justify-content-end">
-                    <h5 align="right" class="col-12">¿Conocés las señales de tránsito?</h5>
-                    <h5 align="right" class="col-12"><b>Te las mostramos, mira...</b></h5>
-                    <button class="m-3 col-6 col-md-4 p-0 more_button">Leer más</button>
-                </div>
-
-                <div class="col-12 my-3 p-3 d-flex d-lg-none flex-wrap justify-content-center">
-                    <h5 align="center">¿Conocés las señales de tránsito?</h5>
-                    <h5 align="center"><b>Te las mostramos, mira...</b></h5>
-                    <button class="m-3 col-6 col-md-4 p-1 more_button">Leer más</button>
-                </div>
-
-                <div class="my-3 col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img class="col-12 col-lg-6" style="object-fit: cover; width:250px; height: 250px;" src="../assets/educacion_vial/señales.webp">
-                </div>
+        <section alt="Hoja" class="section1 py-5 d-flex justify-content-center">
+            <div class="col-8">
+                <form id="form" action="validar.php" method="post" enctype="multipart/form"> 
+                    <fieldset>
+                        <h3 class="text_contactos">Datos</h3>
+                        <p class="text_contactos">Nombre</p>
+                        <div class="form-group mx-sm-3 mx-lg-0 mb-2">
+                            <input required name="name" type="text" class="form-control form-control-sm" id="inputPassword1" placeholder="Ingrese su nombre">
+                        </div>
+                        <p class="text_contactos">Email</p>
+                        <div class="form-group mx-sm-3 mx-lg-0 mb-2">
+                            <input required name="mail" class="form-control form-control-sm" type="email" id="inputPassword3" placeholder="Ingrese su email">
+                        </div>
+    
+                        
+                        <p class="text_contactos">Asunto</p>
+                        <div class="form-group mx-sm-3 mx-lg-0 mb-2">
+                            <input required name="about" class="form-control form-control-sm" id="inputPassword3" placeholder="Ingrese el asunto de su mensaje">
+                        </div>
+    
+                        <p class="text_contactos">Su mensaje:</p>
+                        <div>
+                            <div class="form-group mx-sm-3 mx-lg-0 mb-2">
+                                <textarea required name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+    
+                    </fieldset>
+    
+                    <br>
+                    
+                    <div class="d-flex justify-center">
+                      <div>
+                        <input type="submit" class="btn btn-primary btn-sm btn-light" id="button" value="Enviar" >
+                        <input type="reset" value="Eliminar" class="btn btn-primary btn-sm btn-light">
+                      </div>
+                    </div>
+                    <br>
+                </form>
             </div>
         </section>
     </main>
-
+    
     <footer>
         <div class="d-flex flex-wrap justify-content-center">
           <h4 class="col-12 m-3" align="center">Suscribete para obtener actualizaciones</h4>
@@ -104,7 +104,7 @@
             <input class="col-12" id="email" type="email" name="name">
           </form>
           <button class="col-lg-1">Suscribete</button>
-  
+    
           <h4 class="col-11 mt-5 mb-3"><u>Contactanos</u>, queremos tu opinión</h4>
           <div class="d-flex align-center col-11 my-3 align-items-center">
             <i class="fa-regular fa-envelope fa-2xl"></i>
@@ -114,7 +114,7 @@
             <i class="fa-solid fa-phone fa-2xl"></i>
             <h5 class="col-11 mx-2"><b><u>+54 9 2932-632669</u></b></h5>
           </div>
-  
+    
           <div class="d-flex align-center col-11 mt-3 mb-5 align-items-center">
             <h5>Siguenos</h5>
             <a target= "_blank" href="https://twitter.com/JorgeCordiglia" style="color:white"><i class="fa-brands fa-twitter fa-2xl m-2"></i></a>
@@ -127,5 +127,33 @@
       <script>
         AOS.init();
       </script>
-  </body>
-  </html>
+      <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+        <script type="text/javascript">
+        emailjs.init('J5ZkwZwACbDfqCd04')
+        </script>
+        <script>
+            const btn = document.getElementById('button');
+
+        document.getElementById('form')
+         .addEventListener('submit', function(event) {
+           event.preventDefault();
+        
+           btn.value = 'enviando...';
+        
+           const serviceID = 'default_service';
+           const templateID = 'template_wjd4jpv';
+        
+           emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+              btn.value = 'Enviar';
+              alert('Enviado!');
+            }, (err) => {
+              btn.value = 'Enviar';
+              alert(JSON.stringify(err));
+            });
+        });
+        </script>
+    </body>
+    </html>
